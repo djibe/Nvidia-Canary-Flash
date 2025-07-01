@@ -1,0 +1,9 @@
+{
+"audio_filepath": "martin.mp3",
+"duration": "None",
+"taskname": "asr",
+"source_lang": "en",
+"target_lang": "en",
+"pnc": "yes",
+"answer": "na"
+}
