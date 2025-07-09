@@ -1,11 +1,11 @@
 import torch
 
-# Load the model - Alternatives: canary-1b-flash, nvidia/canary-180m-flash
+# Load model - Alternatives: nvidia/canary-1b-flash, nvidia/canary-180m-flash
 from nemo.collections.asr.models import EncDecMultiTaskModel
 map_location = 'cuda' if torch.cuda.is_available() else 'cpu'
 canary_model = EncDecMultiTaskModel.from_pretrained('nvidia/canary-180m-flash', map_location=map_location)
 
-# Transcribe
+# Transcribe (english by default)
 audio_path = "audio.wav"
 # listen_to_audio(audio_path)
 
